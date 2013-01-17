@@ -1,25 +1,28 @@
 # lein-validate
 
-A Leiningen plugin to do many wonderful things.
+A Leiningen plugin example that mimics `lein test`.
 
 ## Usage
 
-FIXME: Use this for user-level plugins:
+Run `lein install`, then put `[lein-validate "0.1"]` into the `:plugins` vector of your
+`:user` profile in ~/.lein/profile.clj
 
-Put `[lein-validate "0.1.0-SNAPSHOT"]` into the `:plugins` vector of your
-`:user` profile, or if you are on Leiningen 1.x do `lein plugin install
-lein-validate 0.1.0-SNAPSHOT`.
+It should look like:
 
-FIXME: Use this for project-level plugins:
+```clojure
+{:user {:plugins [[lein-validate "0.1"]]}}
+```
 
-Put `[lein-validate "0.1.0-SNAPSHOT"]` into the `:plugins` vector of your project.clj.
+Or for a per-project usage:
 
-FIXME: and add an example usage that actually makes sense:
+Put `[lein-validate "0.1"]` into the `:plugins` vector of your project.clj.
+
+Then:
 
     $ lein validate
 
 ## License
 
-Copyright © 2013 FIXME
+Copyright © 2013 Lee Hinman & the Denver Clojure group
 
 Distributed under the Eclipse Public License, the same as Clojure.
